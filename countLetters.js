@@ -5,16 +5,14 @@ const assertEqual = function(actual, expected) {
 
 
 const countLetters = inputString => {
-  inputString = inputString.toLowerCase(); 
+  inputString = inputString.toLowerCase();
   let results = {};
-  for(let char of inputString) {
-      if (results[char]) {
-        results[char] += 1;
-      } else {
-        results[char] = 1;
-      }
-      
-    
+  for (let char of inputString) {
+    if (results[char]) {
+      results[char] += 1;
+    } else if (char !== ' ') {
+      results[char] = 1;
+    }
   }
   return results;
 };
