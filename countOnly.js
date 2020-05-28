@@ -3,23 +3,6 @@ const assertEqual = function(actual, expected) {
   console.log(answer);
 };
 
-//This is what I wrote initially ****
-// const countOnly = (allItems, itemsToCount) => {
-//   let outputObject = {};
-//   for (let item of allItems) {
-//     for (let countKeys in itemsToCount) {
-//       if (item === countKeys && itemsToCount[countKeys] === true) {
-//         if (outputObject[item] === undefined) {
-//           outputObject[item] = 1;
-//         } else {
-//           outputObject[item] += 1;
-//         }
-//       }
-//     }
-//   }
-//   // return outputObject;
-// };
-
 const countOnly = function(allItems, itemsToCount) {
   const results = {};
 
@@ -53,7 +36,7 @@ const firstNames = [
   "Joe"
 ];
 
-const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true });
+const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true }); 
 
 assertEqual(result1["Jason"], 1);
 assertEqual(result1["Karima"], undefined);
