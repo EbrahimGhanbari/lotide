@@ -8,14 +8,14 @@ const findKeyByValue = (listToSearch, valueToFind) => {
 
     if (listToSearch[listKeys] === valueToFind) {
       return listKeys;
-    } 
-    
+    }
+
   }
 };
 
 
-// Test case 
-const bestTVShowsByGenre = { 
+// Test case
+const bestTVShowsByGenre = {
   sci_fi: "The Expanse",
   comedy: "Brooklyn Nine-Nine",
   drama:  "The Wire"
